@@ -1,3 +1,5 @@
+// @import "_variables.scss";
+
 @font-face {
     font-family: 'product';
     font-style: normal;
@@ -7,5 +9,76 @@
 
 *{font-family: product;}
 
-h1{color: red;}
+body {
+	margin: 0;
+	padding: 0;
+    height: 100%;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+      
+}
+
+html {
+	/* Google "digital art wallpaper" for wallpapers*/
+    background: url(https://stormandsky.com/gif/14.gif) no-repeat center center fixed;
+    // background-color: black;
+	background-size: cover; /* cover whole screen*/
+	height: 100%;
+}
+
+h1{
+    color: white;
+    // font-size:90px;
+    width: 100%;
+    text-align: center;
+
+    // border: 5px solid red;
+    // flex-grow: 1;
+    // margin: 150px;
+    // margin-bottom: 40px;
+    // background-color: black;
+    // display: inline-block;
+
+    
+}
+
+#greeting{font-size: 90px; margin: 0;}
+#date{font-size: 30px;}
+// #th{color: red;}
+
+.container{
+    margin: 20px;
+    display: inline-block;
+
+    ol{ 
+        list-style-type: none;
+
+        .containerTitle{
+            font-size: 26px;
+            margin: 0;
+            // @include gradTxt(red, orange);
+        }
+
+        .link{
+            text-decoration: none;
+            color: white;
+        }
+
+        .item {
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+        .line{
+            height: 3px;
+            width: 180px;
+            // background-image: linear-gradient(to right, red , orange);
+        }
+    }
+}
+
 

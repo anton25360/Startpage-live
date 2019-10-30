@@ -1,1 +1,9 @@
-h1{color: red;} 
+// contains variables & mixins
+
+@mixin gradTxt ($col1,$col2) { 
+    background: linear-gradient(to right,$col1,$col2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+  }

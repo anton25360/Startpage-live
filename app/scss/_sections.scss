@@ -1,0 +1,17 @@
+// section colors
+
+//social media
+.s1Title { @include gradTxt(#fc4a1a, #f7b733); }
+.s1Line { background-image: linear-gradient(to right, #fc4a1a , #f7b733); }
+
+//messaging
+.s2Title { @include gradTxt(#0072ff, #00c6ff); }
+.s2Line { background-image: linear-gradient(to right, #0072ff , #00c6ff); }
+
+//dev
+.s3Title { @include gradTxt(#11998e, #38ef7d); }
+.s3Line { background-image: linear-gradient(to right, #11998e , #38ef7d); }
+
+//routine
+.s4Title { @include gradTxt(#DD2476, #FF512F); }
+.s4Line { background-image: linear-gradient(to right, #DD2476 , #FF512F); }
