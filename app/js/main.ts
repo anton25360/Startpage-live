@@ -3,12 +3,12 @@ function getOrdinalNum(n: any) {
 }
 
 var today = new Date();
-var time = today.getHours() + ":" + (today.getMinutes()<10?'0':''+ today.getMinutes())  //time HH:MM
+// var time = today.getHours()  //time HH:MM
 var date = getOrdinalNum(today.getDate()) //date x + ordinal number (th)
 
 const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-document.querySelector('#date').innerHTML = time + ' - ' + monthNames[today.getMonth()] + ' ' + date
+document.querySelector('#date').innerHTML = monthNames[today.getMonth()] + ' ' + date
 
 var hour = today.getHours()
 if (hour > 08 && hour < 11) {
@@ -17,4 +17,4 @@ if (hour > 08 && hour < 11) {
     document.querySelector('#greeting').innerHTML = 'Good Afternoon.'
 } else {
     document.querySelector('#greeting').innerHTML = 'Good Evening.'
-}
+} 
